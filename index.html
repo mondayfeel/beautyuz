@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beautyuz — Telegram-боты для салонов красоты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo logo" href="#">beautyuz</a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__link" href="#services" data-i18n="nav.services"
+                >Услуги</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__link" href="#pricing" data-i18n="nav.pricing"
+                >Тарифы</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a
+                class="header__link"
+                href="#advantages"
+                data-i18n="nav.advantages"
+                >Преимущества</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a class="header__link" href="#contact" data-i18n="nav.contact"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <div class="header__lang-switch lang-switch">
+            <button
+              class="lang-switch__btn lang-switch__btn--active"
+              data-lang="ru"
+            >
+              RU
+            </button>
+            <button class="lang-switch__btn" data-lang="uz">UZ</button>
+          </div>
+          <a
+            class="header__btn btn btn--telegram"
+            href="https://t.me/yokub_YI"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="btn.telegram"
+            >Telegram</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__container container">
+          <h1 class="hero__title" data-i18n="hero.title">
+            Telegram-боты для салонов красоты
+          </h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">
+            Автоматизируйте запись, напоминания и кассу — сосредоточьтесь на
+            клиентах
+          </p>
+          <a
+            href="#contact"
+            class="hero__btn btn btn--primary"
+            data-i18n="hero.cta"
+            >Заказать бота</a
+          >
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <h2 class="section__title" data-i18n="services.title">
+            Что умеет бот
+          </h2>
+          <div class="services__grid">
+            <div class="services__card service-card">
+              <div class="service-card__icon">📅</div>
+              <h3 class="service-card__title" data-i18n="services.card1.title">
+                Онлайн‑запись
+              </h3>
+              <p class="service-card__desc" data-i18n="services.card1.desc">
+                Клиент выбирает время и мастера прямо в Telegram. Запись
+                мгновенно попадает в календарь.
+              </p>
+            </div>
+            <div class="services__card service-card">
+              <div class="service-card__icon">⏰</div>
+              <h3 class="service-card__title" data-i18n="services.card2.title">
+                Напоминания
+              </h3>
+              <p class="service-card__desc" data-i18n="services.card2.desc">
+                Автоматические уведомления за 1 час клиенту и за 40 минут
+                администратору. Неявки снижаются на 70%.
+              </p>
+            </div>
+            <div class="services__card service-card">
+              <div class="service-card__icon">💇‍♀️</div>
+              <h3 class="service-card__title" data-i18n="services.card3.title">
+                Каталог услуг
+              </h3>
+              <p class="service-card__desc" data-i18n="services.card3.desc">
+                Все процедуры с ценами и описаниями. Клиент видит актуальное
+                меню без звонков.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing section" id="pricing">
+        <div class="container">
+          <h2 class="section__title" data-i18n="pricing.title">Тарифы</h2>
+          <div class="pricing__grid">
+            <div class="pricing__card pricing-card">
+              <h3 class="pricing-card__name" data-i18n="pricing.card1.name">
+                Базовый
+              </h3>
+              <p class="pricing-card__period" data-i18n="pricing.card1.period">
+                3 месяца
+              </p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__value">690 000</span>
+                <span
+                  class="pricing-card__currency"
+                  data-i18n="pricing.currency"
+                  >сум</span
+                >
+              </div>
+              <p
+                class="pricing-card__benefit"
+                data-i18n="pricing.card1.benefit"
+              >
+                Экономия 170 000 сум (настройка со скидкой 50%)
+              </p>
+              <a
+                href="#contact"
+                class="pricing-card__btn btn btn--primary"
+                data-i18n="pricing.btn"
+                >Заказать</a
+              >
+            </div>
+
+            <div class="pricing__card pricing-card pricing-card--featured">
+              <h3 class="pricing-card__name" data-i18n="pricing.card3.name">
+                Премиум
+              </h3>
+              <p class="pricing-card__period" data-i18n="pricing.card3.period">
+                12 месяцев
+              </p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__value">1 590 000</span>
+                <span
+                  class="pricing-card__currency"
+                  data-i18n="pricing.currency"
+                  >сум</span
+                >
+              </div>
+              <p
+                class="pricing-card__benefit"
+                data-i18n="pricing.card3.benefit"
+              >
+                Экономия 710 000 сум (запуск — бесплатно + 2 месяца в подарок)
+              </p>
+              <a
+                href="#contact"
+                class="pricing-card__btn btn btn--primary"
+                data-i18n="pricing.btn"
+                >Заказать</a
+              >
+            </div>
+
+            <div class="pricing__card pricing-card pricing-card--popular">
+              <h3 class="pricing-card__name" data-i18n="pricing.card2.name">
+                Комфорт
+              </h3>
+              <p class="pricing-card__period" data-i18n="pricing.card2.period">
+                6 месяцев
+              </p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__value">990 000</span>
+                <span
+                  class="pricing-card__currency"
+                  data-i18n="pricing.currency"
+                  >сум</span
+                >
+              </div>
+              <p
+                class="pricing-card__benefit"
+                data-i18n="pricing.card2.benefit"
+              >
+                Экономия 350 000 сум (запуск и настройка — 0 сум + 1 месяц
+                обслуживания в подарок)
+              </p>
+              <a
+                href="#contact"
+                class="pricing-card__btn btn btn--primary"
+                data-i18n="pricing.btn"
+                >Заказать</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages section" id="advantages">
+        <div class="container">
+          <h2 class="section__title" data-i18n="advantages.title">
+            Почему Telegram‑бот
+          </h2>
+          <div class="advantages__list">
+            <div class="advantages__item advantage">
+              <div class="advantage__num">01</div>
+              <div class="advantage__text">
+                <h3 data-i18n="advantages.1.title">
+                  Все клиенты уже в Telegram
+                </h3>
+                <p data-i18n="advantages.1.desc">
+                  Не нужно скачивать приложение — бот открывается в привычном
+                  мессенджере, которым пользуется 80% вашей аудитории.
+                </p>
+              </div>
+            </div>
+            <div class="advantages__item advantage">
+              <div class="advantage__num">02</div>
+              <div class="advantage__text">
+                <h3 data-i18n="advantages.2.title">
+                  Экономия времени администратора
+                </h3>
+                <p data-i18n="advantages.2.desc">
+                  Бот принимает заявки 24/7, записывает, напоминает и даже
+                  отвечает на частые вопросы. Сотрудники занимаются только живым
+                  общением.
+                </p>
+              </div>
+            </div>
+            <div class="advantages__item advantage">
+              <div class="advantage__num">03</div>
+              <div class="advantage__text">
+                <h3 data-i18n="advantages.3.title">Рост записи на 30-50%</h3>
+                <p data-i18n="advantages.3.desc">
+                  Удобная запись в 2 клика и автоматические напоминания
+                  увеличивают поток клиентов и снижают отток.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="section__title" data-i18n="contact.title">
+            Связаться со мной
+          </h2>
+          <p class="contact__subtitle" data-i18n="contact.subtitle">
+            Оставьте номер телефона — я отвечу в Telegram и покажу, как бот
+            поможет вашему салону
+          </p>
+          <form
+            class="contact__form form"
+            id="contactForm"
+            action="https://formcarry.com/s/jHTBQjaOE1B"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <input
+              class="form__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+998"
+              required
+              data-i18n-placeholder="form.phone"
+            />
+            <select
+              class="form__input form__select"
+              id="tariff"
+              name="tariff"
+              required
+            >
+              <option
+                value=""
+                disabled
+                selected
+                data-i18n="form.tariff_placeholder"
+              >
+                Выберите тариф
+              </option>
+              <option value="basic" data-i18n="form.tariff_basic">
+                Базовый
+              </option>
+              <option value="comfort" data-i18n="form.tariff_comfort">
+                Комфорт
+              </option>
+              <option value="premium" data-i18n="form.tariff_premium">
+                Премиум
+              </option>
+            </select>
+            <button
+              class="form__btn btn btn--primary"
+              type="submit"
+              data-i18n="form.submit"
+            >
+              Отправить
+            </button>
+          </form>
+          <div class="contact__success" id="successMessage" hidden>
+            <span data-i18n="form.success"
+              >Спасибо! Скоро свяжемся с вами.</span
+            >
+          </div>
+          <div class="contact__links">
+            <a
+              class="contact__link btn btn--outline"
+              href="https://t.me/yokub_YI"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="btn.telegram"
+              >Telegram</a
+            >
+            <a
+              class="contact__link btn btn--outline"
+              href="https://instagram.com/beautybot.uz"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram @beautybot_uz</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__copy" data-i18n="footer.copy">
+          © 2026 beautyuz. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
