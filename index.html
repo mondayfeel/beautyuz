@@ -125,45 +125,74 @@
         </div>
       </section>
 
-      <section class="pricing section" id="pricing">
-        <div class="container">
-          <h2 class="section__title" data-i18n="pricing.title">Тарифы</h2>
-<div class="pricing__grid">
-  <div class="pricing__card pricing-card">
-    <h3 class="pricing-card__name" data-i18n="pricing.card1.name">Базовый</h3>
-    <p class="pricing-card__period" data-i18n="pricing.card1.period">3 месяца</p>
-    <div class="pricing-card__price">
-      <span class="pricing-card__value">890 000</span>
-      <span class="pricing-card__currency" data-i18n="pricing.currency">сум</span>
-    </div>
-    <p class="pricing-card__benefit" data-i18n="pricing.card1.benefit">Экономия 160 000 сум (настройка со скидкой более 35%)</p>
-    <a href="#contact" class="pricing-card__btn btn btn--primary" data-i18n="pricing.btn">Заказать</a>
-  </div>
-
-  <div class="pricing__card pricing-card pricing-card--featured">
-    <h3 class="pricing-card__name" data-i18n="pricing.card3.name">Премиум</h3>
-    <p class="pricing-card__period" data-i18n="pricing.card3.period">12 месяцев</p>
-    <div class="pricing-card__price">
-      <span class="pricing-card__value">1 990 000</span>
-      <span class="pricing-card__currency" data-i18n="pricing.currency">сум</span>
-    </div>
-    <p class="pricing-card__benefit" data-i18n="pricing.card3.benefit">Экономия 860 000 сум (запуск — бесплатно + более 2 месяцев в подарок)</p>
-    <a href="#contact" class="pricing-card__btn btn btn--primary" data-i18n="pricing.btn">Заказать</a>
-  </div>
-
-  <div class="pricing__card pricing-card pricing-card--popular">
-    <h3 class="pricing-card__name" data-i18n="pricing.card2.name">Комфорт</h3>
-    <p class="pricing-card__period" data-i18n="pricing.card2.period">6 месяцев</p>
-    <div class="pricing-card__price">
-      <span class="pricing-card__value">1 290 000</span>
-      <span class="pricing-card__currency" data-i18n="pricing.currency">сум</span>
-    </div>
-    <p class="pricing-card__benefit" data-i18n="pricing.card2.benefit">Экономия 360 000 сум (запуск — 0 сум + обслуживание дешевле на 15%)</p>
-    <a href="#contact" class="pricing-card__btn btn btn--primary" data-i18n="pricing.btn">Заказать</a>
-  </div>
-</div>
+   <section class="pricing section" id="pricing">
+  <div class="container">
+    <h2 class="section__title" data-i18n="pricing.title">Тарифы</h2>
+    <div class="pricing__grid">
+      
+      <!-- START -->
+      <div class="pricing__card pricing-card">
+        <h3 class="pricing-card__name" data-i18n="pricing.card1.name">START</h3>
+        <div class="pricing-card__price">
+          <span class="pricing-card__value">149 000</span>
+          <span class="pricing-card__currency" data-i18n="pricing.currency">UZS / мес</span>
         </div>
-      </section>
+        <p class="pricing-card__period" data-i18n="pricing.card1.period">Для частного мастера или маленького салона</p>
+        <ul class="pricing-card__features">
+          <li data-i18n="pricing.card1.f1">1 Telegram-бот</li>
+          <li data-i18n="pricing.card1.f2">до 20 услуг</li>
+          <li data-i18n="pricing.card1.f3">1-2 мастера</li>
+          <li data-i18n="pricing.card1.f4">базовая онлайн‑запись</li>
+          <li data-i18n="pricing.card1.f5">админ‑панель</li>
+          <li data-i18n="pricing.card1.f6">поддержка в стандартном режиме</li>
+        </ul>
+        <a href="#contact" class="pricing-card__btn btn btn--primary" data-i18n="pricing.btn">Заказать</a>
+      </div>
+
+      <!-- STANDARD (центральная, бежевая) -->
+      <div class="pricing__card pricing-card pricing-card--featured pricing-card--standard">
+        <h3 class="pricing-card__name" data-i18n="pricing.card2.name">STANDARD</h3>
+        <div class="pricing-card__price">
+          <span class="pricing-card__value">249 000</span>
+          <span class="pricing-card__currency" data-i18n="pricing.currency">UZS / мес</span>
+        </div>
+        <p class="pricing-card__period" data-i18n="pricing.card2.period">Лучший вариант для большинства салонов</p>
+        <ul class="pricing-card__features">
+          <li data-i18n="pricing.card2.f1">1 Telegram-бот</li>
+          <li data-i18n="pricing.card2.f2">до 50 услуг</li>
+          <li data-i18n="pricing.card2.f3">до 5 мастеров</li>
+          <li data-i18n="pricing.card2.f4">расписание и свободные слоты</li>
+          <li data-i18n="pricing.card2.f5">уведомления клиенту и админу</li>
+          <li data-i18n="pricing.card2.f6">экспорт / backup</li>
+          <li data-i18n="pricing.card2.f7">приоритетная настройка</li>
+        </ul>
+        <a href="#contact" class="pricing-card__btn btn btn--primary" data-i18n="pricing.btn">Заказать</a>
+      </div>
+
+      <!-- PRO -->
+      <div class="pricing__card pricing-card">
+        <h3 class="pricing-card__name" data-i18n="pricing.card3.name">PRO</h3>
+        <div class="pricing-card__price">
+          <span class="pricing-card__value">449 000</span>
+          <span class="pricing-card__currency" data-i18n="pricing.currency">UZS / мес</span>
+        </div>
+        <p class="pricing-card__period" data-i18n="pricing.card3.period">Для активных салонов с большим потоком</p>
+        <ul class="pricing-card__features">
+          <li data-i18n="pricing.card3.f1">до 100 услуг</li>
+          <li data-i18n="pricing.card3.f2">до 15 мастеров</li>
+          <li data-i18n="pricing.card3.f3">расширенные настройки расписания</li>
+          <li data-i18n="pricing.card3.f4">акции / лояльность</li>
+          <li data-i18n="pricing.card3.f5">расширенный экспорт</li>
+          <li data-i18n="pricing.card3.f6">приоритетная поддержка</li>
+          <li data-i18n="pricing.card3.f7">ежемесячная мини‑проверка</li>
+        </ul>
+        <a href="#contact" class="pricing-card__btn btn btn--primary" data-i18n="pricing.btn">Заказать</a>
+      </div>
+
+    </div>
+    <p class="pricing__note" data-i18n="pricing.note">Цены базовые, могут адаптироваться под город, объём услуг, мастеров и поддержку</p>
+  </div>
+</section>
 
       <section class="advantages section" id="advantages">
         <div class="container">
