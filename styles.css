@@ -467,6 +467,9 @@ h2 {
   background: var(--color-white);
   transition: border-color var(--transition);
   font-family: inherit;
+
+  padding: 0.75rem 1.5rem; /* Немного уменьшили вертикальный отступ */
+  height: 48px; /* Жестко фиксируем адекватную высоту поля */
 }
 
 .form__input:focus {
@@ -485,6 +488,8 @@ h2 {
   background-size: 1.2rem;
   padding-right: 2.8rem;
   cursor: pointer;
+
+   height: 48px;
 }
 
 .contact__success {
