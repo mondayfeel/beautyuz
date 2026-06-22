@@ -1,7 +1,6 @@
 (function () {
   'use strict';
 
-  // ==================== i18n ====================
   const translations = {
     ru: {
       'nav.services': 'Услуги',
@@ -9,7 +8,7 @@
       'nav.advantages': 'Преимущества',
       'nav.contact': 'Контакты',
       'btn.telegram': 'Telegram',
-      'hero.title': 'Telegram-бот для салона красоты',
+      'hero.title': 'Telegram-боты для салонов красоты',
       'hero.subtitle': 'Автоматизируйте запись, напоминания и кассу — сосредоточьтесь на клиентах',
       'hero.cta': 'Заказать бота',
       'services.title': 'Что умеет бот',
@@ -20,17 +19,35 @@
       'services.card3.title': 'Каталог услуг',
       'services.card3.desc': 'Все процедуры с ценами и описаниями. Клиент видит актуальное меню без звонков.',
       'pricing.title': 'Тарифы',
-      'pricing.card1.name': 'Базовый',
-      'pricing.card1.period': '3 месяца',
-      'pricing.card1.benefit': 'Экономия 160 000 сум (настройка со скидкой более 35%)',
-      'pricing.card2.name': 'Комфорт',
-      'pricing.card2.period': '6 месяцев',
-      'pricing.card2.benefit': 'Экономия 360 000 сум (запуск — 0 сум + обслуживание выгоднее на 15%)',
-      'pricing.card3.name': 'Премиум',
-      'pricing.card3.period': '12 месяцев',
-      'pricing.card3.benefit': 'Экономия 860 000 сум (запуск — бесплатно + более 2 месяцев в подарок!)',
-      'pricing.currency': 'сум',
+      'pricing.card1.name': 'START',
+      'pricing.card1.period': 'Для частного мастера или маленького салона',
+      'pricing.card1.f1': '1 Telegram-бот',
+      'pricing.card1.f2': 'до 20 услуг',
+      'pricing.card1.f3': '1-2 мастера',
+      'pricing.card1.f4': 'базовая онлайн‑запись',
+      'pricing.card1.f5': 'админ‑панель',
+      'pricing.card1.f6': 'поддержка в стандартном режиме',
+      'pricing.card2.name': 'STANDARD',
+      'pricing.card2.period': 'Лучший вариант для большинства салонов',
+      'pricing.card2.f1': '1 Telegram-бот',
+      'pricing.card2.f2': 'до 50 услуг',
+      'pricing.card2.f3': 'до 5 мастеров',
+      'pricing.card2.f4': 'расписание и свободные слоты',
+      'pricing.card2.f5': 'уведомления клиенту и админу',
+      'pricing.card2.f6': 'экспорт / backup',
+      'pricing.card2.f7': 'приоритетная настройка',
+      'pricing.card3.name': 'PRO',
+      'pricing.card3.period': 'Для активных салонов с большим потоком',
+      'pricing.card3.f1': 'до 100 услуг',
+      'pricing.card3.f2': 'до 15 мастеров',
+      'pricing.card3.f3': 'расширенные настройки расписания',
+      'pricing.card3.f4': 'акции / лояльность',
+      'pricing.card3.f5': 'расширенный экспорт',
+      'pricing.card3.f6': 'приоритетная поддержка',
+      'pricing.card3.f7': 'ежемесячная мини‑проверка',
+      'pricing.currency': 'UZS / мес',
       'pricing.btn': 'Заказать',
+      'pricing.note': 'Цены базовые, могут адаптироваться под город, объём услуг, мастеров и поддержку',
       'advantages.title': 'Почему Telegram‑бот',
       'advantages.1.title': 'Все клиенты уже в Telegram',
       'advantages.1.desc': 'Не нужно скачивать приложение — бот открывается в привычном мессенджере, которым пользуется 80% вашей аудитории.',
@@ -42,9 +59,9 @@
       'contact.subtitle': 'Оставьте номер телефона — я отвечу в Telegram и покажу, как бот поможет вашему салону',
       'form.phone': '+998',
       'form.tariff_placeholder': 'Выберите тариф',
-      'form.tariff_basic': 'Базовый',
-      'form.tariff_comfort': 'Комфорт',
-      'form.tariff_premium': 'Премиум',
+      'form.tariff_start': 'START',
+      'form.tariff_standard': 'STANDARD',
+      'form.tariff_pro': 'PRO',
       'form.submit': 'Отправить',
       'form.success': 'Спасибо! Скоро свяжемся с вами.',
       'form.error': 'Введите номер и выберите тариф',
@@ -56,7 +73,7 @@
       'nav.advantages': 'Afzalliklar',
       'nav.contact': 'Kontaktlar',
       'btn.telegram': 'Telegram',
-      'hero.title': 'Goʻzallik salonlari uchun Telegram-bot',
+      'hero.title': 'Goʻzallik salonlari uchun Telegram-botlar',
       'hero.subtitle': 'Yozilish, eslatmalar va kassani avtomatlashtiring — mijozlarga eʼtibor qarating',
       'hero.cta': 'Botni buyurtma qilish',
       'services.title': 'Bot nimalarni biladi',
@@ -67,17 +84,35 @@
       'services.card3.title': 'Xizmatlar katalogi',
       'services.card3.desc': 'Barcha protseduralar narxlari va tavsiflari bilan. Mijoz qoʻngʻiroqlarsiz joriy menyuni koʻradi.',
       'pricing.title': 'Tariflar',
-      'pricing.card1.name': 'Bazaviy',
-      'pricing.card1.period': '3 oy',
-      'pricing.card1.benefit': '160 000 so‘m ekonomiya (sozlash 35% dan ortiq chegirma)',
-      'pricing.card2.name': 'Komfort',
-      'pricing.card2.period': '6 oy',
-      'pricing.card2.benefit': '360 000 so‘m ekonomiya (ishga tushirish — 0 so‘m + xizmat 15% arzon)',
-      'pricing.card3.name': 'Premium',
-      'pricing.card3.period': '12 oy',
-      'pricing.card3.benefit': '860 000 so‘m ekonomiya (ishga tushirish — bepul + 2 oydan ortiq sovg‘a)',
-      'pricing.currency': 'so‘m',
+      'pricing.card1.name': 'START',
+      'pricing.card1.period': 'Xususiy usta yoki kichik salon uchun',
+      'pricing.card1.f1': '1 Telegram-bot',
+      'pricing.card1.f2': '20 tagacha xizmat',
+      'pricing.card1.f3': '1-2 usta',
+      'pricing.card1.f4': 'oddiy onlayn yozilish',
+      'pricing.card1.f5': 'admin panel',
+      'pricing.card1.f6': 'standart qo‘llab-quvvatlash',
+      'pricing.card2.name': 'STANDARD',
+      'pricing.card2.period': 'Ko‘pchilik salonlar uchun eng yaxshi variant',
+      'pricing.card2.f1': '1 Telegram-bot',
+      'pricing.card2.f2': '50 tagacha xizmat',
+      'pricing.card2.f3': '5 tagacha usta',
+      'pricing.card2.f4': 'jadval va bo‘sh slotlar',
+      'pricing.card2.f5': 'mijoz va adminga xabarnomalar',
+      'pricing.card2.f6': 'eksport / backup',
+      'pricing.card2.f7': 'ustuvor sozlash',
+      'pricing.card3.name': 'PRO',
+      'pricing.card3.period': 'Katta oqimli faol salon  uchun',
+      'pricing.card3.f1': '100 tagacha xizmat',
+      'pricing.card3.f2': '15 tagacha usta',
+      'pricing.card3.f3': 'kengaytirilgan jadval sozlamalari',
+      'pricing.card3.f4': 'aksiya / loyalty',
+      'pricing.card3.f5': 'kengaytirilgan eksport',
+      'pricing.card3.f6': 'ustuvor qo‘llab-quvvatlash',
+      'pricing.card3.f7': 'oylik mini-tekshiruv',
+      'pricing.currency': 'UZS / oy',
       'pricing.btn': 'Buyurtma qilish',
+      'pricing.note': 'Narxlar bazaviy, shahar, xizmatlar hajmi, ustalar va qo‘llab-quvvatlashga qarab moslashtirilishi mumkin',
       'advantages.title': 'Nima uchun Telegram-bot',
       'advantages.1.title': 'Barcha mijozlar allaqachon Telegramda',
       'advantages.1.desc': 'Ilovani yuklab olish shart emas — bot tanish messenjerda ochiladi, undan auditoriyangizning 80% foydalanadi.',
@@ -89,9 +124,9 @@
       'contact.subtitle': 'Telefon raqamingizni qoldiring — men Telegramda javob beraman va bot sizning saloningizga qanday yordam berishini koʻrsataman',
       'form.phone': '+998',
       'form.tariff_placeholder': 'Tarifni tanlang',
-      'form.tariff_basic': 'Bazaviy',
-      'form.tariff_comfort': 'Komfort',
-      'form.tariff_premium': 'Premium',
+      'form.tariff_start': 'START',
+      'form.tariff_standard': 'STANDARD',
+      'form.tariff_pro': 'PRO',
       'form.submit': 'Yuborish',
       'form.success': 'Rahmat! Tez orada siz bilan bogʻlanamiz.',
       'form.error': 'Raqamni kiriting va tarifni tanlang',
@@ -137,54 +172,48 @@
   });
 
   // ==================== Contact Form ====================
- const form = document.getElementById('contactForm');
-const successMsg = document.getElementById('successMessage');
-const FORM_URL = 'https://formcarry.com/s/jHTBQjaOE1B'; 
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('successMessage');
+  const FORM_URL = 'https://formcarry.com/s/jHTBQjaOE1B';
 
-form.addEventListener('submit', async function (e) {
-  e.preventDefault(); // блокируем стандартную отправку
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
 
-  const phoneInput = form.querySelector('#phone');
-  const tariffSelect = form.querySelector('#tariff');
-  const phone = phoneInput.value.trim();
-  const tariff = tariffSelect.value;
+    const phoneInput = form.querySelector('#phone');
+    const tariffSelect = form.querySelector('#tariff');
+    const phone = phoneInput.value.trim();
+    const tariff = tariffSelect.value;
 
-  // Проверка заполнения
-  if (!phone || phone.length < 7 || !tariff) {
-    alert(translations[currentLang]?.['form.error'] || 'Введите номер и выберите тариф');
-    return;
-  }
-
-  //  данные для отправки
-  const formData = new FormData();
-  formData.append('phone', phone);
-  formData.append('tariff', tariff);
-
-  try {
-    const response = await fetch(FORM_URL, {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: formData
-    });
-
-    if (response.ok) {
-      // Успех — показывает наше сообщение
-      successMsg.hidden = false;
-      form.reset();
-      setTimeout(() => {
-        successMsg.hidden = true;
-      }, 5000);
-    } else {
-      // Если Formcarry вернул ошибку
-      const errorText = await response.text();
-      console.error('Formcarry error:', errorText);
-      alert('Ошибка отправки. Попробуйте позже.');
+    if (!phone || phone.length < 7 || !tariff) {
+      alert(translations[currentLang]?.['form.error'] || 'Введите номер и выберите тариф');
+      return;
     }
-  } catch (error) {
-    console.error(error);
-    alert('Ошибка сети. Проверьте интернет.');
-  }
-});
+
+    const formData = new FormData();
+    formData.append('phone', phone);
+    formData.append('tariff', tariff);
+
+    try {
+      const response = await fetch(FORM_URL, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (response.ok) {
+        successMsg.hidden = false;
+        form.reset();
+        setTimeout(() => { successMsg.hidden = true; }, 5000);
+      } else {
+        const errorText = await response.text();
+        console.error('Formcarry error:', errorText);
+        alert('Ошибка отправки. Попробуйте позже.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Ошибка сети. Проверьте интернет.');
+    }
+  });
 
   // ==================== Mobile Burger Menu ====================
   const burger = document.createElement('button');
