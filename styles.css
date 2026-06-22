@@ -637,13 +637,13 @@ h2 {
   }
 
   .form__input {
-    max-width: 100%;
-    width: 100%;
+    max-width: 70%;
+    width: 70%;
   }
 
   .form__select {
-    max-width: 100%;
-    width: 100%;
+    max-width: 70%;
+    width: 70%;
   }
 }
 
