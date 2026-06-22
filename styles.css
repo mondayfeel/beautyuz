@@ -533,6 +533,7 @@ h2 {
 }
 
 /* ==================== RESPONSIVE ==================== */
+/* ==================== RESPONSIVE ==================== */
 @media (max-width: 1024px) {
   .container {
     padding: 0 20px;
@@ -642,6 +643,57 @@ h2 {
   }
 }
 
+/* ===== Дополнительный адаптив для iPhone 13 Pro Max и аналогичных ===== */
+@media (max-width: 430px) {
+  /* Более компактная форма */
+  .form {
+    gap: 0.7rem;               /* уменьшенный зазор между полями */
+  }
+
+  .form__input {
+    padding: 0.75rem 1.2rem;   /* уменьшенные внутренние отступы */
+    font-size: 0.95rem;        /* чуть меньший шрифт */
+    border-radius: 80px;       /* можно сделать ещё более скруглённым, чтобы вписывалось */
+  }
+
+  .form__select {
+    padding: 0.75rem 1.2rem;
+    padding-right: 2.2rem;     /* место для стрелки */
+    font-size: 0.95rem;
+    background-position: right 1rem center;
+    background-size: 1rem;
+  }
+
+  .form .btn {
+    padding: 0.75rem 1.8rem;   /* компактная кнопка */
+    font-size: 0.95rem;
+    width: 100%;               /* кнопка на всю ширину формы */
+    max-width: 100%;
+    border-radius: 80px;
+  }
+
+  /* Уменьшаем отступы в секции контактов */
+  .contact__subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .contact__links {
+    margin-top: 2rem;
+  }
+
+  /* Общие отступы секции */
+  .section {
+    padding: 60px 0;
+  }
+
+  /* Шапка чуть ниже */
+  .header__container {
+    height: 60px;
+  }
+}
+
+/* Оставляем уже существующий запрос для 480px */
 @media (max-width: 480px) {
   .container {
     padding: 0 16px;
